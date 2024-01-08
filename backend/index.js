@@ -77,6 +77,6 @@ app.get("/movie/:slug",async (req,res) => {
     }
 })
 
-app.get(".")
+app.get("/",(req,res) => res.send("success"));
 
 app.listen(port,() =>  console.log(`Server on http://localhost:${port}/`));
